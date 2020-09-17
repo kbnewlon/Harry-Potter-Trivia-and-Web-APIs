@@ -1,3 +1,15 @@
+//When i click the start button I want the timer to go down from 1:00 minute 
+//when the timer starts go to the first question
+//I want the user to choose an answer
+//If correct go to the next question 
+//if incorrect deduct 5 seconds from clock
+//and move onto next question(9 times for ten questions)
+//when all the questions are answered or the clock reached zero have the user write their initials next to their score
+//once score is submitted take user to high score page 
+//once at high score page play the harry potter theme 
+
+
+
 # Web_API_Code_Quiz
 # 04 Web APIs: Code Quiz
 

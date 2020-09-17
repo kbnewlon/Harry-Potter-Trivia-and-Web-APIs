@@ -4,55 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web APIs - Code Quiz</title>
+    <title>Harry Potter Trivia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">H.P. Trivia Game</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" id="homeLink" href="index.html">Home <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="viewHSLink" href="scores.html">View High Scores</a>
-                    </li>
+   
+       <!-- Setting up th submit button  -->
 
-                </ul>
-
-            </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <h1>Test your Harry Potter knowledge here!</h1>
-        <div id="divQuestion">
-            <p id="pQuestion">Click the start button to begin the quiz.<br>
-                You have one minute to get all the questions right <br>
-                Get one wrong and ten seconds will be deducted from your time.
-            </p>
-            <div id="divChoices">
-
-            </div>
-
-        </div>
-
-        <button type="button" class="btn btn-primary mt-3">Start</button>
-        <div id="lastResult" class="mt-3">
-
-        </div>
-    </div>
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+    
 
     <footer>
         <div class="fixed-bottom">
@@ -69,8 +35,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="assets/scripts/questions.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <script src="questions.js"></script>
+
 
 </body>
 

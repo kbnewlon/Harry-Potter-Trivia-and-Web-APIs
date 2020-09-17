@@ -7,9 +7,9 @@ const quizQuestions = [
         b:"He kisses a mermaid   ",
         c:"He eats gillyweed",
         d:"He performs a bubble-head charm",
-    }
+    },
     correctAnswer: "c"
-};
+},
 
 
 
@@ -20,9 +20,9 @@ const quizQuestions = [
         b:"Weasleys’ Wizard Wheezes",
         c:"Fred & George’s Wonder Emporium",
         d:"Zonko’s Joke Shop",
-    }
+    },
     correctAnswer: "b"
-};
+},
 
 
 {
@@ -32,9 +32,9 @@ const quizQuestions = [
         b:"Imperius Curse",
         c:"Sectumsempra",
         d:"Avada Kedavra",
-    }
+    },
     correctAnswer: "c"
-};
+},
 
 {
     question: "Who played Lord Voldemort in the movies?",
@@ -43,9 +43,9 @@ const quizQuestions = [
         b:"Tom Hiddleston",
         c:"Gary Oldman",
         d:"Ralph Fiennes",
-    }
+    },
     correctAnswer: "d"
-};
+},
 
 
 
@@ -56,9 +56,9 @@ const quizQuestions = [
         b:"The Fat Friar",
         c:"The Bloody Baron",
         d:"The Fat Lady",
-    }
+    },
     correctAnswer: "d"
-};
+},
 
 
 {
@@ -68,9 +68,9 @@ const quizQuestions = [
         b:"Mad-eye Moody",
         c:"Professor Snape",
         d:"Remus Lupin",
-    }
+    },
     correctAnswer: "a"
-};
+},
 
 
 
@@ -81,9 +81,9 @@ const quizQuestions = [
         b:"Squib",
         c:"Duddle",
         d:"Wizont",
-    }
+    },
     correctAnswer: "b"
-};
+},
 
 
 
@@ -94,9 +94,9 @@ const quizQuestions = [
         b:"Sends someone to the nether realm",
         c:"Removes parts of someone’s memory",
         d:"Makes objects invisible",
-    }
+    },
     correctAnswer: "c"
-};
+},
 
 {
     question: "Where does Hermione brew her first batch of Polyjuice Potion?",
@@ -105,23 +105,24 @@ const quizQuestions = [
         b:"The Hogwarts Kitchen",
         c:"The Room of Requirement",
         d:"The Gryffindor Common Room",
-    }
+    },
     correctAnswer: "a"
-};
+},
 
 
 
 {
-    question: "What does one say to close the Marauder’s Map and make it blank again?,
+    question: "What does one say to close the Marauder’s Map and make it blank again?",
     answers: {
         a:"Mischief Managed",
         b:"Nothing to See Here",
         c:"All Done",
         d:"Hello Professor",
-    }
+    },
     correctAnswer: "a"
-};
+},
 
 
 
 ];
+//questions and answers from https://ahaslides.com/blog/50-harry-potter-quiz-questions-and-answers/
