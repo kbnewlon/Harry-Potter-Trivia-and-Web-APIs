@@ -1,88 +1,99 @@
+//define variables in global scope for application 
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
 
 
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-const quizQuestions = [];
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
+
+  function showQuestions(questions, quizContainer) {
+    // code will go here
+  }
+
+  function showResults(questions, quizContainer, resultsContainer) {
+    // code will go here
+  }
+
+  // show the questions
+  showQuestions(questions, quizContainer);
+
+  // when user clicks submit, show results
+  submitButton.onclick = function () {
+    showResults(questions, quizContainer, resultsContainer);
+  }
+}
 
 
-//build quiz is a function that will compile the list of questions together to work in this application 
-function buildQuiz(){}
+function showQuestions(questions, quizContainer){
+	// we'll need a place to store the output and the answer choices
+	var output = [];
+	var answers;
 
-function showResults(){}
+	// for each question...
+	for(var i=0; i<questions.length; i++){
+		
+		// first reset the list of answers
+		answers = [];
 
-// display quiz right away
-buildQuiz();
-
-// when the user clicks submit the submits the quiz the results will show
-submitButton.addEventListener('click', showResults);
-
-function buildQuiz(){
-    // variable to store the HTML output
-    const output = [];
-  
-    // for each question we want to run this
-    quizQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-  
-        // variable to store the list of possible answers
-        const answers = [];
-  
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-  
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-  
-        // add this question and its answers to the output
-        output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
-        );
-      }
-    );
-  
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-
-
-    function showResults(){
-
-        // gather answer containers from our quiz
-        const answerContainers = quizContainer.querySelectorAll('.answers');
+		// for each available answer to this question...
+		for(letter in questions[i].answers){
       
-        // this variable will keep track of user's answers
-        let numCorrect = 0;
-      
-        // for each question...
-        myQuestions.forEach( (currentQuestion, questionNumber) => {
-      
-          // find selected answer
-          const answerContainer = answerContainers[questionNumber];
-          const selector = `input[name=question${questionNumber}]:checked`;
-          const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-      
-          // if answer is correct
-          if(userAnswer === currentQuestion.correctAnswer){
-            // add to the number of correct answers
-            numCorrect++;
-      
-            // color the answers blue
-            answerContainers[questionNumber].style.color = 'lightblue';
-          }
-          // if answer is wrong or blank
-          else{
-            // color the answers red
-            answerContainers[questionNumber].style.color = 'red';
-          }
-        });
-      
-        // show number of correct answers out of total
-        resultsContainer.innerHTML = `${numCorrect} out of ${quizQuestions.length}`;
+			// ...add an html radio button
+			answers.push(
+				'<label>'
+					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
+					+ letter + ': '
+					+ questions[i].answers[letter]
+				+ '</label>'
+			);
+		}
+
+		// add this question and its answers to the output
+		output.push(
+			'<div class="question">' + questions[i].question + '</div>'
+			+ '<div class="answers">' + answers.join('') + '</div>'
+		);
+	}
+
+	// finally combine our output list into one string of html and put it on the page
+	quizContainer.innerHTML = output.join('');
+}
+
+function showResults(questions, quizContainer, resultsContainer){
+	
+	// gather answer containers from our quiz
+	var answerContainers = quizContainer.querySelectorAll('.answers');
+	
+	// keep track of user's answers
+	var userAnswer = '';
+	var numCorrect = 0;
+	
+	// for each question...
+	for(var i=0; i<questions.length; i++){
+
+		// find selected answer
+		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+		
+		// if answer is correct
+		if(userAnswer===questions[i].correctAnswer){
+			// add to the number of correct answers
+			numCorrect++;
+			
+			// color the answers blue
+			answerContainers[i].style.color = 'blue';
+		}
+		// if answer is wrong or blank
+		else{
+			// color the answers red
+			answerContainers[i].style.color = 'red';
+		}
+	}
+
+	// show number of correct answers out of total
+	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+}
+
+// on submit, show results
+submitButton.onclick = function(){
+	showResults(questions, quizContainer, resultsContainer);
+};

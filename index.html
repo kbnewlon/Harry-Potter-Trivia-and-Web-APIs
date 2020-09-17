@@ -5,37 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter Trivia</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
 </head>
-
+<!-- first i need to create a landing page -->
 <body>
-   
-       <!-- Setting up th submit button  -->
+    <div class="container">
+        <div id="landingpage">
+            <!-- <img src="assets\landing_page_picture.jpg" alt="Hedwig and the Deathly Hallows" class="bg"> -->
 
-        <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
-    
+            <h2 style="text-align: center;">Quiz your Harry Potter knowledge with this trivia game.</h2>
+            <h3 style="text-align: center;">Try and beat the clock! Each wrong answer will deduct 10 seconds off your time!</h3>
+            <button id="startBtn">Start</button>
+        </div>
 
-    <footer>
-        <div class="fixed-bottom">
+
+<!-- then i need to create the quiz -->
+        <div id="quiz">
+
+
+
+        </div>
+
+
+<!-- finally i need to set and display the high scores and initials -->
+        <div id="results">
+
+
+
+        </div>
+
+    </div>
+    <!-- <footer> -->
+        <!-- Why is she no longer fixed at the bottom?? -->
+        <div class="footer">
             Copyright 2020, Kayla B. Newlon.
         </div>
-    </footer>
+    <!-- </footer> -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="questions.js"></script>
 
 
 </body>

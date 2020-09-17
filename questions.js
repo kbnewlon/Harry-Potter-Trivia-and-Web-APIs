@@ -1,4 +1,4 @@
-const quizQuestions = [
+const myQuestions = [
 
 {
     question: "How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?",
