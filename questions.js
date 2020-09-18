@@ -1,125 +1,101 @@
-const myQuestions = [
+const questions = [
 
 {
-    question: "How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?",
-    answers: {
-        a:"He transfigures into a shark",
-        b:"He kisses a mermaid   ",
-        c:"He eats gillyweed",
-        d:"He performs a bubble-head charm",
-    },
-    correctAnswer: "c"
+    title: "How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?",
+    choices: ['He transfigures into a shark', 'He kisses a mermaid','He eats gillyweed', 'He performs a bubble-head charm'], 
+    answer: "He eats gillyweed"
 },
 
 
 
 {
-    question: "What is the name of Fred and George’s joke shop?",
-    answers: {
-        a:"Weasley Joke Emporium",
-        b:"Weasleys’ Wizard Wheezes",
-        c:"Fred & George’s Wonder Emporium",
-        d:"Zonko’s Joke Shop",
-    },
-    correctAnswer: "b"
-},
+     title: "What is the name of Fred and George’s joke shop?",
+     choices: ["Weasley Joke Emporium", "Weasleys’ Wizard Wheezes","Fred & George’s Wonder Emporium","Zonko’s Joke Shop"],
+     answer: "Weasleys’ Wizard Wheezes"
+ },
 
 
-{
-    question: "Which of these is NOT one of the Unforgivable Curses?",
-    answers: {
-        a:"Cruciatus Curse",
-        b:"Imperius Curse",
-        c:"Sectumsempra",
-        d:"Avada Kedavra",
-    },
-    correctAnswer: "c"
-},
+ {
+     title: "Which of these is NOT one of the Unforgivable Curses?",
+     choices: ["Cruciatus Curse","Imperius Curse","Sectumsempra","Avada Kedavra"],
+     answer: "Sectumsempra"
+ },
 
-{
-    question: "Who played Lord Voldemort in the movies?",
-    answers: {
-        a:"Jeremy Irons",
-        b:"Tom Hiddleston",
-        c:"Gary Oldman",
-        d:"Ralph Fiennes",
-    },
-    correctAnswer: "d"
-},
+ {
+     title: "Who played Lord Voldemort in the movies?",
+     choices: ["Jeremy Irons","Tom Hiddleston","Gary Oldman","Ralph Fiennes"],
+     answer: "Ralph Fiennes"
+ },
 
 
 
-{
-    question: "Who guards the entrance to the Gryffindor common room?",
-    answers: {
-        a:"The Grey Lady",
-        b:"The Fat Friar",
-        c:"The Bloody Baron",
-        d:"The Fat Lady",
-    },
-    correctAnswer: "d"
-},
+ {
+     title: "Who guards the entrance to the Gryffindor common room?",
+     choices: ["The Grey Lady","The Fat Friar","The Bloody Baron","The Fat Lady"],
+     answer: "The Fat Lady"
+ },
 
 
-{
-    question: "Who is NOT a member of the Order of the Phoenix?",
-    answers: {
-        a:"Cornelius Fudge",
-        b:"Mad-eye Moody",
-        c:"Professor Snape",
-        d:"Remus Lupin",
-    },
-    correctAnswer: "a"
-},
+ {
+     title: "Who is NOT a member of the Order of the Phoenix?",
+     choices: ["Cornelius Fudge","Mad-eye Moody","Professor Snape","Remus Lupin"],
+     answer: "Cornelius Fudge"
+ },
 
 
 
-{
-    question: "A wizard who cannot do magic is known as a:?",
-    answers: {
-        a:"Bleaker",
-        b:"Squib",
-        c:"Duddle",
-        d:"Wizont",
-    },
-    correctAnswer: "b"
-},
+ {
+     title: "A wizard who cannot do magic is known as a:?",
+     choices: ["Bleaker","Squib","Duddle","Wizont"],
+     answer: "Squib"
+ },
 
 
+
+ {
+     title: "What does the spell “Obliviate” do?",
+     choices: ["Destroys objects","Sends someone to the nether realm","Removes parts of someone’s memory","Makes objects invisible"],
+     answer: "Removes parts of someone’s memory"
+ },
+
+ {
+     title: "Where does Hermione brew her first batch of Polyjuice Potion?",
+     choices: ["Moaning Myrtle’s Bathroom","The Hogwarts Kitchen","The Room of Requirement","The Gryffindor Common Room"],
+     answer: "Moaning Myrtle’s Bathroom"
+ },
+
+
+
+ {
+     title: "What does one say to close the Marauder’s Map and make it blank again?",
+     choices: ["Mischief Managed","Nothing to See Here","All Done","Hello Professor"],
+     answer: "Mischief Managed"
+ },
 
 {
-    question: "What does the spell “Obliviate” do?",
-    answers: {
-        a:"Destroys objects",
-        b:"Sends someone to the nether realm",
-        c:"Removes parts of someone’s memory",
-        d:"Makes objects invisible",
-    },
-    correctAnswer: "c"
+    title: "The three kinds of balls used in Quidditch are Bludgers, Snitches, and…",
+    choices: ["Quaffles", "Wiffles","Boccis","Foozles"],
+    answer: "Quaffles"
 },
 
 {
-    question: "Where does Hermione brew her first batch of Polyjuice Potion?",
-    answers: {
-        a:"Moaning Myrtle’s Bathroom",
-        b:"The Hogwarts Kitchen",
-        c:"The Room of Requirement",
-        d:"The Gryffindor Common Room",
-    },
-    correctAnswer: "a"
+    title: "Who has been stealing Harry’s letters from Ron and Hermione at the beginning of ‘Harry Potter and the Chamber of Secrets’?",
+    choices: ["Dumbledore", "Draco Malfoy", "Dobby","The Dursleys"],
+    answer: "Dobby"
 },
 
+{
+    title: "How many Weasley siblings are there?",
+    choices: ["5","7", "10", "3"],
+    answer: "7"
 
+
+},
 
 {
-    question: "What does one say to close the Marauder’s Map and make it blank again?",
-    answers: {
-        a:"Mischief Managed",
-        b:"Nothing to See Here",
-        c:"All Done",
-        d:"Hello Professor",
-    },
-    correctAnswer: "a"
+    title: "Where do Harry and Ron eventually find the missing flying Ford Anglia?",
+    choices: ["At the Ministry of Magic","In the Forbidden Forest","In the Room of Requirement","Outside the Dursleys House"],
+    answer:"In the Forbidden Forest"
 },
 
 

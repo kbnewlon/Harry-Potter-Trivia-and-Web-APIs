@@ -7,30 +7,36 @@
     <title>Harry Potter Trivia</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css" />
-    <script src="./questions.js"></script>
-    <script src="./script.js"></script>
+
 </head>
 <!-- first i need to create a landing page -->
+
 <body>
     <div class="container">
         <div id="landingpage">
-            <!-- <img src="assets\landing_page_picture.jpg" alt="Hedwig and the Deathly Hallows" class="bg"> -->
+            <!-- This container sets up the headers and the start button -->
 
             <h2 style="text-align: center;">Quiz your Harry Potter knowledge with this trivia game.</h2>
-            <h3 style="text-align: center;">Try and beat the clock! Each wrong answer will deduct 10 seconds off your time!</h3>
+            <h3 style="text-align: center;">20 questions. How may can you get right? Felix Felicis, muggle. </h3>
             <button id="startBtn">Start</button>
         </div>
 
 
-<!-- then i need to create the quiz -->
+        <!-- then i need to create the quiz -->
         <div id="quiz">
 
+            <h1 id="questionText"></h1>
 
-
+            <div id=buttonDiv>
+                <button id="button1" class="button"></button>
+                <button id="button2" class="button"></button>
+                <button id="button3" class="button"></button>
+                <button id="button4" class="button"></button>
+            </div>
         </div>
 
 
-<!-- finally i need to set and display the high scores and initials -->
+        <!-- finally i need to set and display the high scores and initials -->
         <div id="results">
 
 
@@ -39,10 +45,9 @@
 
     </div>
     <!-- <footer> -->
-        <!-- Why is she no longer fixed at the bottom?? -->
-        <div class="footer">
-            Copyright 2020, Kayla B. Newlon.
-        </div>
+    <div class="footer">
+        Copyright 2020, Kayla B. Newlon.
+    </div>
     <!-- </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -55,7 +60,8 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
