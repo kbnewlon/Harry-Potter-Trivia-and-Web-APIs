@@ -9,10 +9,12 @@ var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 var button3 = document.getElementById('button3');
 var button4 = document.getElementById('button4');
-var indexNum  = 0;
+var indexNum = 0;
 var score = 0;
+var correctAnswer = questions[indexNum].answer
 
-function displayIndex () {
+
+function displayIndex() {
 	questionText.textContent = questions[indexNum].title
 	button1.textContent = questions[indexNum].choices[0];
 	button2.textContent = questions[indexNum].choices[1];
@@ -21,35 +23,39 @@ function displayIndex () {
 };
 
 
-
-startButton.addEventListener("click", function(){
-	landingDiv.style.display= "none";
+startButton.addEventListener("click", function () {
+	landingDiv.style.display = "none";
 	quizDiv.style.display = "block"
 	displayIndex();
 })
 
-button1.addEventListener("click", function(){
+button1.addEventListener("click", function () {
 	indexNum++;
 	displayIndex();
 });
 
-button2.addEventListener("click", function(){
+button2.addEventListener("click", function () {
 	indexNum++;
 	displayIndex();
 });
 
-button3.addEventListener("click", function(){
+button3.addEventListener("click", function () {
 	indexNum++;
 	displayIndex();
 });
 
-button4.addEventListener("click", function(){
+button4.addEventListener("click", function () {
 	indexNum++;
 	displayIndex();
 });
 
 
+
+// if (answer == button1){
+// 	score++
+// }
+// if button1 = answer add 1 point
 
 //create button listener adds 1 to index num
-//change questions to arrays 
+
 //put if statement in add event listener for buttons

@@ -17,7 +17,7 @@ body {
 
     
 button{
-    display: block;
+    display: center;
     align-items: center;
     font-family: sans-serif;
     background-color: darkblue;
@@ -45,12 +45,12 @@ button:hover{
     color: white;
     margin:300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
     
     
 } 
 
 #questionText {
+    display:center;
     color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     justify-content: center;
@@ -79,7 +79,9 @@ button:hover{
   }
 
   #buttonDiv {
-      margin: 20px;
-     /* justify-content: right; */
-      
+      margin-left: 300px;
+      margin-right: 300px;
+      padding: 20px;
+      display: center;   
+
   }

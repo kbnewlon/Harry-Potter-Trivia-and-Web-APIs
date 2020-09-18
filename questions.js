@@ -1,5 +1,5 @@
 const questions = [
-
+//20 questions and answers
 {
     title: "How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?",
     choices: ['He transfigures into a shark', 'He kisses a mermaid','He eats gillyweed', 'He performs a bubble-head charm'], 
@@ -89,7 +89,6 @@ const questions = [
     choices: ["5","7", "10", "3"],
     answer: "7"
 
-
 },
 
 {
@@ -98,7 +97,42 @@ const questions = [
     answer:"In the Forbidden Forest"
 },
 
+{
+    title: "From what King’s Cross platform does the Hogwarts Express leave?",
+    choices: ["Eight and One-quarter", "Nine and Three-quarters","Five and a Half","Eleven"],
+    answer: "Nine and Three-quarters"
+},
 
+{
+    title:"What’s the name of Filch’s cat?",
+    choices: ["Sir Pounce","Buttercup","Mrs. Norris","Jones"],
+    answer: "Mrs. Norris"
+},
+
+{
+    title:"Which professor teaches flying lessons?",
+    choices:["Professor Grubbly-Plank","Sybill Trelawney","Charity Burbage","Madam Hooch"],
+    answer: "Madam Hooch"
+},
+
+{
+    title: "What does Hermione use to defeat the Devil’s Snare plant?",
+    choices: ["Sunlight","Expelliarmus!","Wind","A Reducto Charm"],
+    answer: "Sunlight" 
+
+},
+
+{
+    title:"What does Mrs. Weasley give Harry for Christmas every year?",
+    choices: ["Bertie Bott’s every flavour beans","Chocolate frogs","A fruit cake","A new sweater"],
+    answer: "A new sweater"
+},
+
+{
+    title:"How do you summon a Patronus?",
+    choices:["Patronia Paternus","Expelliarmus Patronicha","Expecto Patronum","Accio Patronus"],
+    answer: "Expecto Patronum"
+}
 
 ];
 //questions and answers from https://ahaslides.com/blog/50-harry-potter-quiz-questions-and-answers/
