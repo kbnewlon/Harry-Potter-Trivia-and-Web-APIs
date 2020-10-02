@@ -20,7 +20,7 @@ button{
     display: center;
     align-items: center;
     font-family: sans-serif;
-    background-color: darkblue;
+    background-color: rgb(21, 21, 190);
     border-radius: 10px;
     border: 3px black;
     color: #eeeeee;
@@ -36,6 +36,11 @@ button{
     
 button:hover{
     box-shadow: 6px 6px 6px #030303;
+    background-color: darkblue;
+}
+
+#challenge{
+    margin-bottom: 3%;
 }
     
 #landingpage{
