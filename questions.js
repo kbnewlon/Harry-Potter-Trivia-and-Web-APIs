@@ -132,7 +132,91 @@ const questions = [
     title:"How do you summon a Patronus?",
     choices:["Patronia Paternus","Expelliarmus Patronicha","Expecto Patronum","Accio Patronus"],
     answer: "Expecto Patronum"
+},
+//questions and answers from https://ahaslides.com/blog/50-harry-potter-quiz-questions-and-answers/
+
+{
+    title:"What Quidditch position does Harry Potter play?",
+    choices:["Beater","Seeker","Chaser","Keeper"],
+    answer: "Seeker"
+},
+
+{
+    title:"Who does Harry marry?",
+    choices:["Hermione Granger","Moaning Myrtle","Ginny Weasley","Fleur Delacour"],
+    answer: "Ginny Weasley"
+},
+
+{
+    title:"Katie Bell belonged to which house while she was a student at Hogwarts?",
+    choices:["Hufflepuff","Slytherin","Ravenclaw","Gryffindor"],
+    answer: "Gryffindor"
+},
+
+{
+    title:"What happens when Ron tries to hex Malfoy with his broken wand?",
+    choices:["A puff of smoke comes out","The wand explodes","He accidently hits Harry","The spell backfires"],
+    answer: "The spell backfires"
+},
+
+{
+    title:"After they escape imprisonment at Malfoy Manor, where do Harry and his friends hide out?",
+    choices:["Gringotts","Spinner's End","Shell Cottage","The Burrow"],
+    answer: "Shell Cottage"
+},
+
+{
+    title:"In which of the Harry Potter books does the location Spinner's End first make an appearance?",
+    choices:["Half-Blood Prince","Chamber of Secrets","Deathly Hallows","Prisoner of Azkaban"],
+    answer: "Half-Blood Prince"
+},
+
+{
+    title:"From where did Harry first learn about Nicolas Flamel?",
+    choices:["History Book","Newspaper","Muggle Radio","Chocolate Frog Card"],
+    answer: "Chocolate Frog Card"
+},
+
+{
+    title:"The Marauders Map is a magical map of which location?",
+    choices:["Azkaban Prison","Malfoy Manor","Gringotts Bank","Hogwarts"],
+    answer: "Hogwarts"
+},
+
+{
+    title:"Which species is NOT found in the Forbidden Forest?",
+    choices:["Centaur","Acromantula","Chimaera","Unicorn"],
+    answer: "Chimaera"
+},
+
+{
+    title:"Who does Buckbeak attack in Hagrid's first Care of Magical Creatures lesson?",
+    choices:["Dean Thomas","Cedric Diggory","Gregory Goyle","Draco Malfoy"],
+    answer: "Draco Malfoy"
+},
+
+{
+    title:"Winky and Dobby are what kind of magical creatures?",
+    choices:["House Elves","Death Eaters","Unicorns","Phoenixes"],
+    answer: "House Elves"
+},
+
+{
+    title:"Who became Minister for Magic after Voldemort's final defeat?",
+    choices:["Arthur Weasley","Cornelius Fudge","Albus Dumbledore","Kingsley Shacklebolt"],
+    answer: "Kingsley Shacklebolt"
+},
+
+{
+    title:"What nationality is the Quidditch player Viktor Krum?",
+    choices:["Bulgarian","Romanian","German","Russian"],
+    answer: "Bulgarian"
+},
+
+{
+    title:"The Shrieking Shack was used to keep which werewolf safe?",
+    choices:["Harry Potter","Bill Weasley","Fenrir Greyback","Remus Lupin"],
+    answer: "Remus Lupin"
 }
 
 ];
-//questions and answers from https://ahaslides.com/blog/50-harry-potter-quiz-questions-and-answers/
